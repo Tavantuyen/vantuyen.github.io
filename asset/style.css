@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.row {
+    display: block;
+    content: "";
+    clear: both;
+}
+.col1 {
+    width: 100%;
+}
+.col2 {
+    width: 50%;
+}
+.col3 {
+    width: calc(100%/3);
+}
+.col4 {
+    width: calc(25%);
+}
+.text__center {
+    text-align: center;
+}
+.text__left {
+    text-align: left;
+}
+.margin__auto {
+    margin: auto auto;
+}
+.float__right {
+    float: right;
+}
+#main {
+    width: 100%;
+}
+.relative {
+    position: relative;
+}
+#header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 60px;
+    border-bottom: 1px solid gainsboro;
+    box-shadow: 1px 1px 1px gainsboro;
+    background-color: white;
+}
+.nav {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.nav>li>a {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0px 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    border-bottom: 1px solid gainsboro;
+}
+.nav>li:hover>a {
+    border-bottom: 1px solid black;
+}
+.nav>li:nth-child(4)>a,.nav>li:nth-child(5)>a  {
+    color: red;
+}
+.nav>li:nth-child(4):hover>a,.nav>li:nth-child(5):hover>a  {
+    border-bottom: 1px solid red;
+}
+.nav>li:hover>.subnav {
+    display: flex;
+}
+.subnav {
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px 100px;
+ 
+}
+.subnav>li {
+    display: inline-block;
+    width: 25%;
+}
+.subnavTwo {
+    /* padding: 20px; */
+}
+
+.subnavTwo>li>a {
+    display: block;
+    font-size: 14px;
+    padding: 12px 24px;
+    color: black;
+}
+.subnavTwo>li:hover>a {
+    text-decoration: underline;
+}
+.iconJuno>img {
+    width: 100px;
+}
+.iconJuno {
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    margin-left: 40px;
+
+}
+
+.inputSearch{
+    width: 100px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in;
+    
+}
+.inputSearch:hover::placeholder {
+    color: white;
+}
+.navSearch:hover>.inputSearch {
+   transform: scaleX(1.25);
+   border-bottom: 1px solid black;
+}
+.navSearch>.iconSearch {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    transition: all 0.3s ease-in;
+}
+.navSearch:hover>.iconSearch {
+    right: -30px;
+}
+.navSearch {
+    padding-left: 50px;
+    position: relative;
+    width: 150px;
+    position: absolute;
+    line-height: 60px;
+    top: 0;
+    right: 150px;
+}
+.inconProfile {
+    padding: 0px 10px;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    right: 90px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.inconCart {
+    padding: 0px 10px;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.inconProfile>a,.inconCart>a,.inconMenu>a {
+    color: black;
+}
+.inconMenu {
+    padding: 0px 10px;
+    position: absolute;
+    top: 0;
+    line-height: 60px;
+    right: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+/*  */
+#slider {
+    /* display: none; */
+    position: relative;
+}
+.btnNextRight {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    cursor: pointer;
+}
+.btnNextLeft {
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    cursor: pointer;
+}
+.btnNextRight--modify {
+    right: -5%;   
+    top: 40%; 
+}
+.btnNextLeft--modify {
+    left: -5%; 
+    top: 40%;
+}
+.btnNextRight>.ti-angle-right {
+    font-size: 50px;
+    opacity: 0.5;
+}
+.btnNextLeft>.ti-angle-left {
+    font-size: 50px;
+    opacity: 0.5;
+}
+#slider>.slider__image {
+    display: flex;
+    transition: transform 1s ease;
+    transform: translateX(0%);
+}
+
+
+#slider>.slider__image>img {
+    width: 100%;
+}
+/*  */
+/*  */
+
+#content {
+    /* display: none; */
+    padding: 50px 100px;
+}
+.content__product {
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+    
+}   
+.product__title {
+    margin: 30px 0px;
+}
+.product__body {
+    margin-bottom: 30px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+.product__list {
+    margin: -10px;
+
+}
+.product__info {
+    float: left;
+    padding: 10px;
+    min-height: 600px;
+}
+.product__list--edit {
+    margin: -20px;
+}
+.product__info--edit {
+    padding: 20px;
+}
+
+.info__img {
+    max-width: 100%;
+    display: block;
+    border: 1px solid gainsboro;
+    border-bottom: none;
+}
+
+.info__list {
+    border: 1px solid transparent;
+}
+.info__title {
+    height: 40px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.info__title--modify {
+    opacity: 0.5;
+    font-size: 13px;
+    color: black;
+}
+.info__title--modify>a {
+    color: black;
+}
+.info__price {
+    margin-top: 10px; 
+    font-size: 20px;
+}
+.product_buy {
+    display: none;
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+}
+.product__info--modify:hover .product_buy {
+    display: inline-block;
+}
+.product__info--modify:hover .info__list {
+    border: 1px solid gainsboro;
+    border-top: 1px solid transparent;
+}
+.info__head {
+    margin-top: 20px;
+}
+.min__height {
+    min-height: 200px;
+}
+.info__icon {
+    display: flex;
+}
+.info__icon>li {
+    padding: 10px 20px;
+}
+.info__icon>li>a {
+    color: black;
+}
+/*  */
+#footer {
+    /* background-color: black; */
+    
+}
+
+.footer__start {
+    display: flex;
+    padding: 40px 100px;
+    background-color: gainsboro;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.footer__title>li {
+    width:100%;
+    cursor: pointer;
+}
+
+.footer__info {
+    /* display: block; */
+    display: none;
+    animation: animationFooter 2s ease;
+    transition: all 3s ease;
+}
+
+.footer__info>li>a {
+    display: inline-block;
+    width: 50%;
+    padding: 10px 0px;
+    color: black;
+    font-size: 13px;
+}
+.footer__info>li:first-child>a {
+    margin-top: 10px;
+}
+.footer__end{
+    display: inline-block;
+    padding: 50px 0px 50px 100px;
+    font-size: 14px;
+}
+.footer_icon {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    float: right;
+    font-size: 14px;
+}
+.show__footer {
+    display: block;
+}
+
+@keyframes animationFooter {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

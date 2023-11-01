@@ -1,0 +1,68 @@
+@media (min-width:1024px)
+{
+   
+    .inconMenu {
+        display: none;
+    }
+}
+
+@media (max-width:1023px)
+{
+    .inconMenu {
+        display: block;
+    }
+    .nav { 
+        display: none;
+        top: 0;
+        width: 100%;
+        position: absolute;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: white;
+    }
+    .nav>li {
+        display: block;
+    }
+    .iconJuno>img {
+        width: 100px;
+    }
+    .iconJuno {
+        position: absolute;
+        height: 60px;
+        float: left;
+        line-height: 60px;
+        margin-left: 40px;
+    }
+    .show__nav {
+        display: flex;
+    }
+    .frame {
+        height: 400px;
+    }
+    .product__info768 {
+        min-height: 350px;
+    }
+    .size {
+        width: 100%;
+    }
+    .size2 {
+        width: 50%;
+    } 
+    .info__icon {
+        flex-wrap: wrap;
+    }
+
+
+
+}
+@media (min-width:768px) and (max-width:1024px)
+{
+    .btnNextRight--modify {
+        right: -5%;   
+        top: 30%; 
+    }
+    .btnNextLeft--modify {
+        left: -5%; 
+        top: 30%;
+    }
+}
